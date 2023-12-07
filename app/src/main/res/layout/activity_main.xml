@@ -1,0 +1,28 @@
+//pada file ini digunakan RelativeLayout karena sifat dari RelativeLayout
+//orientasinya vertical dan horizontal, maka pada android pada baris ke-10
+//digunakan vertical
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.utdi.nandahidayat.MainActivity">
+
+   //lakukan pemanggilan untuk recycleview
+   //gunakan id, ukuran layout, serta gunakan list item
+   //yang nantinya akan memberikan tampilan list pada aplikasi
+   //ketika dijalankan
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/rv_character"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       tools:listitem="@layout/item_character"/>
+
+</RelativeLayout>
+//setelah selesai. selanjutnya coba untuk mendapatkan data dari
+//link https://rickandmortyapi.com/api.character.
+//kemudian copy keseluruhan data, dan untuk dapat membaca data tersebut
+//gunakan plugin, dan hasil dari plugin tersebut adalah file
+//RepositoryRick.kt
